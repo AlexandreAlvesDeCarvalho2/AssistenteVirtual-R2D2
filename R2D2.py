@@ -14,7 +14,7 @@ def ouvir_microfone():
         with sr.Microphone() as source: #usando o microfone        
             print("Diga alguma coisa: ")
             
-            audio = microfone.listen(source, timeout= None) #Armazena o que foi dito numa variavel
+            audio = microfone.listen(source, timeout= None) #Armazena o que foi dito em uma variavel
             
             try:
                 frase = microfone.recognize_google(audio,language='pt-BR') #Passa a variável para o algoritmo reconhecedor de padroes
